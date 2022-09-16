@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script>
+  function reqListener () {
+  console.log(this.responseText);
+}
+
+const req = new XMLHttpRequest();
+req.addEventListener("load", reqListener);
+req.open("GET", "https://10.107.45.42:8444/cuic/rest/status");
+req.send();
+  </script>
+  </body>
+</html>
