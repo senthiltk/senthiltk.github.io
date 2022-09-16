@@ -14,8 +14,9 @@
 const req = new XMLHttpRequest();
 req.open("GET", "https://10.107.45.42:8444/cuic/rest/status");
 req.send();
-req.open("GET", "https://10.107.45.167:8444/cuic/rest/status");
-req.send();
+const req1 = new XMLHttpRequest();
+req1.open("GET", "https://10.107.45.167:8444/cuic/rest/status");
+req1.send();
   </script>
   </body>
 </html>
