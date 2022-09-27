@@ -18,7 +18,7 @@ function processForm(e) {
     return false;
 }
 
-var form = document.getElementById('my-form');
+var form = document.getElementById('myform');
 if (form.attachEvent) {
     form.attachEvent("submit", processForm);
 } else {
@@ -26,7 +26,7 @@ if (form.attachEvent) {
 }
 
   </script>
-	  <form id="my-form">
+	  <form id="myform">
     <input id = "url_id" type="text" name="URL" value="" />
     <button type="submit">Go</button>
 </form>
