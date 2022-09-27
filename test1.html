@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script>
+function processForm(e) {
+    if (e.preventDefault) e.preventDefault();
+
+    /* do what you want with the form */
+
+const req = new XMLHttpRequest();
+	var url = document.getElementById('url_id').value
+req.open("GET", url);
+req.send();
+    return false;
+}
+
+var form = document.getElementById('my-form');
+if (form.attachEvent) {
+    form.attachEvent("submit", processForm);
+} else {
+    form.addEventListener("submit", processForm);
+}
+
+  </script>
+	  <form id="my-form">
+    <input id = "url_id" type="text" name="URL" value="" />
+    <button type="submit">Go</button>
+</form>
+  </body>
+</html>
