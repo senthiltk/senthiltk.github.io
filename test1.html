@@ -11,13 +11,10 @@
 	<script>
 function processForm(e) {
     if (e.preventDefault) e.preventDefault();
-
-    /* do what you want with the form */
-
-const req = new XMLHttpRequest();
-	var url = document.getElementById('url_id').value
-req.open("GET", url);
-req.send();
+    const req = new XMLHttpRequest();
+    var url = document.getElementById('url_id').value
+    req.open("GET", url);
+    req.send();
     return false;
 }
 
