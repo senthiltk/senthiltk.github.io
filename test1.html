@@ -17,9 +17,9 @@
 function processForm(e) {
     if (e.preventDefault) e.preventDefault();
     const req = new XMLHttpRequest();
-	req.setRequestHeader("Accept","application/json");
     var url = document.getElementById('url_id').value
     req.open("GET", url);
+    req.setRequestHeader("Accept","application/json");
     req.send();
     return false;
 }
